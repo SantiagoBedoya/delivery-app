@@ -1,0 +1,19 @@
+POST http://localhost:8080/api/v1/auth/sign-up
+
+{
+  "first_name":"Santiago",
+  "last_name": "Bedoya",
+  "email": "santiago@gmail.com",
+  "role": "admin",
+  "password": "santiago123",
+  "address": "Veracruz via La Linda",
+  "phone": "3043485901"
+}
+
+###
+POST http://localhost:8080/api/v1/auth/sign-in
+
+{
+  "email": "santiago@gmail.com",
+  "password": "santiago123"
+}

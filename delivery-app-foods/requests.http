@@ -1,0 +1,29 @@
+GET http://localhost:8080/api/v1/foods
+###
+GET http://localhost:8080/api/v1/foods/1
+###
+POST http://localhost:8080/api/v1/foods
+
+{
+  "name": "Empanada",
+  "description": "Empanadas de pollo",
+  "vendor_id": "1",
+  "category": "Fast Food",
+  "type": "Fat",
+  "ready_time": "12 minutes",
+  "price": 1200
+}
+###
+PATCH http://localhost:8080/api/v1/foods/1
+
+{
+  "name": "Empanada updated",
+  "description": "Empanadas de pollo",
+  "vendor_id": "1",
+  "category": "Fast Food",
+  "type": "Fat",
+  "ready_time": "12 minutes",
+  "price": 1200
+}
+###
+DELETE  http://localhost:8080/api/v1/foods/1

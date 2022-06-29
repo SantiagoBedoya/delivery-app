@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS foods(
+  id SERIAL PRIMARY KEY,
+  vendor_id INT NOT NULL,
+  name VARCHAR(50) NOT NULL,
+  description VARCHAR(255) NOT NULL,
+  category VARCHAR(50) NOT NULL,
+  type VARCHAR(25) NOT NULL,
+  ready_time VARCHAR(50) NOT NULL,
+  price FLOAT NOT NULL,
+  rating INT DEFAULT 0
+);
